@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="container">
+    <div class="card">
+      <h1 class="header">What is your name ?</h1>
+      <ion-item>
+        <ion-input
+          type="email"
+          placeholder="Email"
+          class="input"
+          [(ngModel)]="email"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="password"
+          placeholder="Password"
+          class="input"
+          [(ngModel)]="password"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="password"
+          placeholder="Retype Password"
+          class="input"
+          [(ngModel)]="passwordVerification"
+        ></ion-input>
+      </ion-item>
+      <ion-button class="button ion-margin-top" (click)="onContinue()">
+        Continue
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

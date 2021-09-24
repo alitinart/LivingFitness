@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="container">
+    <div class="card">
+      <h1 class="header">What is your name ?</h1>
+
+      <ion-item>
+        <ion-input
+          type="text"
+          placeholder="First Name"
+          class="input"
+          [(ngModel)]="name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="text"
+          placeholder="Last Name"
+          class="input"
+          [(ngModel)]="lastname"
+        ></ion-input>
+      </ion-item>
+      <ion-button class="button ion-margin-top" (click)="onContinue()">
+        Continue
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

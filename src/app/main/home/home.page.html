@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menuButton"> </ion-menu-button>
+    </ion-buttons>
+    <ion-title style="font-weight: 700">Living Fitness</ion-title>
+    <ion-icon slot="end" src="./assets/icon/icon.png"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="card">
+      <div class="cardInfo">
+        <h3 class="cardHeader">Hi {{ name }},</h3>
+        <br />
+        <p class="cardDesc">
+          Scroll down to look at your workout schedule today
+        </p>
+      </div>
+      <div class="cardIcon">
+        <img src="./assets/icon/HiIcon.png" alt="" />
+      </div>
+    </div>
+
+    <h3 class="sectionHeader">Schedule</h3>
+
+    <!-- Biceps -->
+    <div class="card cardTraining">
+      <div class="cardIcon cardIconTraining">
+        <img src="./assets/icon/training.png" alt="" />
+      </div>
+      <div class="cardInfo cardInfoTraining">
+        <h3>Biceps Training</h3>
+        <ion-button
+          expand="block"
+          fill="clear"
+          shape="round"
+          routerLink="/biceps"
+        >
+          Start
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- Leg Day -->
+    <div class="card cardTraining">
+      <div class="cardIcon cardIconTraining">
+        <img src="./assets/icon/training.png" alt="" />
+      </div>
+      <div class="cardInfo cardInfoTraining">
+        <h3>Leg Day</h3>
+        <ion-button expand="block" fill="clear" shape="round">
+          Start
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- Six Pack -->
+    <div class="card cardTraining">
+      <div class="cardIcon cardIconTraining">
+        <img src="./assets/icon/training.png" alt="" />
+      </div>
+      <div class="cardInfo cardInfoTraining">
+        <h3>Six Pack Training</h3>
+        <ion-button expand="block" fill="clear" shape="round">
+          Start
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- Grip Strength -->
+    <div class="card cardTraining">
+      <div class="cardIcon cardIconTraining">
+        <img src="./assets/icon/training.png" alt="" />
+      </div>
+      <div class="cardInfo cardInfoTraining">
+        <h3>Grip Strength Training</h3>
+        <ion-button expand="block" fill="clear" shape="round">
+          Start
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

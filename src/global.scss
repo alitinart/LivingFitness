@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,49 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Custom CSS */
+
+.button {
+  --background: white;
+  --color: #00a2f5;
+}
+
+.container {
+  padding: 0 25px;
+}
+
+.input {
+  --border-color: var(--ion-color-white, white);
+  --color: var(--ion-color-white, white);
+  --placeholder-color: var(--ion-color-white, white);
+}
+.inputLable {
+  color: var(--ion-color-white, white);
+}
+.card {
+  background-color: #00a2f5;
+  border-radius: 15px;
+  color: white;
+  padding: 45px 30px;
+}
+.cardInfo {
+  display: inline-block;
+  width: 75%;
+}
+.cardIcon {
+  display: inline-block;
+}
+ion-menu-button {
+  --background: none;
+}
+ion-title {
+  font-weight: 700;
+}
