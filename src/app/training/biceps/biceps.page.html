@@ -11,10 +11,37 @@
   <div class="container">
     <div class="card">
       <img src="./assets/icon/BicepsWorkout1Pt1.png" alt="" />
-      <h3 class="step">Lay flat and grab the weight</h3>
-      <div class="time">
-        <p>{{ time }} seconds remaining</p>
+      <h3 class="step">{{ text }}</h3>
+      <ion-button
+        (click)="onStart()"
+        *ngIf="!started"
+        expand="block"
+        fill="clear"
+        shape="round"
+      >
+        Start
+      </ion-button>
+      <div class="time" *ngIf="started">
+        <p>{{ maxTime }} seconds remaining</p>
       </div>
+      <ion-button
+        (click)="onPause()"
+        expand="block"
+        *ngIf="started"
+        fill="clear"
+        shape="round"
+      >
+        Pause
+      </ion-button>
+      <ion-button
+        (click)="onUnPause()"
+        expand="block"
+        *ngIf="paused"
+        fill="clear"
+        shape="round"
+      >
+        Unpause
+      </ion-button>
     </div>
   </div>
 </ion-content>
