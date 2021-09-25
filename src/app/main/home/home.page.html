@@ -25,58 +25,18 @@
 
     <h3 class="sectionHeader">Schedule</h3>
 
-    <!-- Biceps -->
-    <div class="card cardTraining">
+    <div class="card cardTraining" *ngFor="let page of trainingPages">
       <div class="cardIcon cardIconTraining">
-        <img src="./assets/icon/training.png" alt="" />
+        <img [src]="page.iconPath" alt="" />
       </div>
       <div class="cardInfo cardInfoTraining">
-        <h3>Biceps Training</h3>
+        <h3>{{ page.name }}</h3>
         <ion-button
           expand="block"
           fill="clear"
           shape="round"
-          routerLink="/biceps"
+          [routerLink]="page.pageUrl"
         >
-          Start
-        </ion-button>
-      </div>
-    </div>
-
-    <!-- Leg Day -->
-    <div class="card cardTraining">
-      <div class="cardIcon cardIconTraining">
-        <img src="./assets/icon/training.png" alt="" />
-      </div>
-      <div class="cardInfo cardInfoTraining">
-        <h3>Leg Day</h3>
-        <ion-button expand="block" fill="clear" shape="round">
-          Start
-        </ion-button>
-      </div>
-    </div>
-
-    <!-- Six Pack -->
-    <div class="card cardTraining">
-      <div class="cardIcon cardIconTraining">
-        <img src="./assets/icon/training.png" alt="" />
-      </div>
-      <div class="cardInfo cardInfoTraining">
-        <h3>Six Pack Training</h3>
-        <ion-button expand="block" fill="clear" shape="round">
-          Start
-        </ion-button>
-      </div>
-    </div>
-
-    <!-- Grip Strength -->
-    <div class="card cardTraining">
-      <div class="cardIcon cardIconTraining">
-        <img src="./assets/icon/training.png" alt="" />
-      </div>
-      <div class="cardInfo cardInfoTraining">
-        <h3>Grip Strength Training</h3>
-        <ion-button expand="block" fill="clear" shape="round">
           Start
         </ion-button>
       </div>

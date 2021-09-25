@@ -20,6 +20,18 @@ const routes: Routes = [
     path: 'biceps',
     loadChildren: () => import('./training/biceps/biceps.module').then( m => m.BicepsPageModule)
   },
+  {
+    path: 'leg-day',
+    loadChildren: () => import('./training/leg-day/leg-day.module').then( m => m.LegDayPageModule)
+  },
+  {
+    path: 'six-pack',
+    loadChildren: () => import('./training/six-pack/six-pack.module').then( m => m.SixPackPageModule)
+  },
+  {
+    path: 'grip-strength',
+    loadChildren: () => import('./training/grip-strength/grip-strength.module').then( m => m.GripStrengthPageModule)
+  },
 ];
 
 @NgModule({
