@@ -29,9 +29,13 @@ export class BicepsPage implements OnInit {
         this.started = true;
         this.onStart();
       } else {
-        this.started = false;
-        this.maxTime = 30;
-        this.text = 'Now do 10 reps, each rep lasting 3 seconds inbetween';
+        if (this.paused === false) {
+          this.started = false;
+          this.maxTime = 30;
+          this.text = 'Now do 10 reps, each rep lasting 3 seconds inbetween';
+        } else {
+          this.maxTime = 30;
+        }
       }
     }, 1000);
   }
@@ -40,7 +44,6 @@ export class BicepsPage implements OnInit {
     this.paused = true;
     this.currentTime = this.maxTime;
     this.maxTime = 0;
-    this.started = false;
   }
 
   onUnPause() {

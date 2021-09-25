@@ -21,13 +21,13 @@
       >
         Start
       </ion-button>
-      <div class="time" *ngIf="started">
+      <div class="time" *ngIf="!paused && started">
         <p>{{ maxTime }} seconds remaining</p>
       </div>
       <ion-button
         (click)="onPause()"
         expand="block"
-        *ngIf="started"
+        *ngIf="!paused && started"
         fill="clear"
         shape="round"
       >
