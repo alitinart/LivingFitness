@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
     { title: 'Meals', url: '/meals', icon: 'pizza' },
-    { title: 'Favorite Workouts', url: '/folder/Favorites', icon: 'heart' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor(private router: Router) {}
