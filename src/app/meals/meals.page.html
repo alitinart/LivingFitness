@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menuButton"> </ion-menu-button>
+    </ion-buttons>
+    <ion-title>Meals</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container cardContainer">
+    <div class="breakfast" *ngIf="isBreakfast">
+      <h1 class="sectionHeader">Breakfast</h1>
+      <div class="card" *ngFor="let meal of breakfast">
+        <h1 class="cardHeader">{{ meal.name }}</h1>
+        <ul *ngFor="let ingredient of meal.ingredients">
+          <li>{{ ingredient }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="lunch" *ngIf="isLunch">
+      <h1 class="sectionHeader" *ngIf="isLunch">Lunch</h1>
+      <div class="card" *ngFor="let meal of lunch">
+        <h1 class="cardHeader">{{ meal.name }}</h1>
+        <ul *ngFor="let ingredient of meal.ingredients">
+          <li>{{ ingredient }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="dinner" *ngIf="isDinner">
+      <h1 class="sectionHeader">Dinner</h1>
+      <div class="card" *ngFor="let meal of dinner">
+        <h1 class="cardHeader">{{ meal.name }}</h1>
+        <ul *ngFor="let ingredient of meal.ingredients">
+          <li>{{ ingredient }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ion-content>

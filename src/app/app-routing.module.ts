@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'grip-strength',
     loadChildren: () => import('./training/grip-strength/grip-strength.module').then( m => m.GripStrengthPageModule)
   },
+  {
+    path: 'meals',
+    loadChildren: () => import('./meals/meals.module').then( m => m.MealsPageModule)
+  },
 ];
 
 @NgModule({

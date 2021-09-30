@@ -1,0 +1,45 @@
+.menuButton {
+  --background: none;
+}
+.container {
+  padding: 50px 50px;
+}
+.cardHeader {
+  font-size: 30px;
+  font-weight: 700;
+  display: inline;
+}
+.cardDesc {
+  font-weight: 700;
+}
+.sectionHeader {
+  margin: 50px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.cardIconTraining {
+  width: 30%;
+}
+.cardInfo {
+  h3 {
+    font-weight: 700;
+    text-align: center;
+  }
+}
+.cardInfoTraining {
+  margin-left: 20px;
+  width: 70%;
+}
+.cardTraining {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px;
+  margin: 20px 0;
+}
+.card {
+  background-color: #00a2f5;
+  border-radius: 15px;
+  margin: 10px 0;
+}

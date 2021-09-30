@@ -25,7 +25,10 @@
 
     <h3 class="sectionHeader">Schedule</h3>
 
-    <div class="card cardTraining" *ngFor="let page of trainingPages">
+    <div
+      class="card cardTraining"
+      *ngFor="let page of trainingPages; let i = index"
+    >
       <div class="cardIcon cardIconTraining">
         <img [src]="page.iconPath" alt="" />
       </div>
@@ -39,6 +42,11 @@
         >
           Start
         </ion-button>
+        <ion-icon
+          [name]="page.favorite"
+          (click)="onFavorite(i)"
+          class="favoriteIcon"
+        ></ion-icon>
       </div>
     </div>
   </div>
